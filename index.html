@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./Assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+
+        <div class="navbar">
+            <img src="./Assets/logo.png" alt="logo">
+            <div class="nav-search">
+                <div class="tooltip">
+                    <span class="home-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="badge bdg-1">Home</span>
+                </div>
+                <form action="https://open.spotify.com/search" class="search">
+                    <label for="search">
+                        <i class="fa-brands fa-sistrix"></i>
+                    </label>
+                    <input type="text" placeholder="What do you want to play?" id="search"/>
+                    <span class="browse">
+                        <div class="tooltip">
+                            <span class="vertical-line">|</span>
+                            <i class="fa-regular fa-folder-open nav-icon"></i>
+                            <span class="badge bdg-2">Browse</span>
+                        </div>
+                    </span>
+                </form>
+            </div>
+            <div class="nav-side-menu">
+                <button class="btn-w">Explore Premium</button>
+                <a href="#" class="nav-icon"><i class="fa-solid fa-circle-arrow-down"></i>Install App</a>
+                <div class="tooltip">
+                    <a href="#" class="nav-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </a>
+                    <span class="badge bdg-3">What's new</span>
+                </div>
+                <div class="tooltip">
+                    <a href="#" class="nav-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </a>
+                    <span class="badge bdg-4">Listening activity</span>
+                </div>
+                <span class="profile">S</span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="s-head">
+                <h1>Your Library</h1>
+                <button class="home-icon"><i class="fa-solid fa-plus"></i>Create</button>
+            </div>
+            <div class="s-main s-main-1">
+                <p class="head-text">Create Your first playlist</p>
+                <p class="sub-text">It's easy, we'll help you</p>
+                <button class="btn-w">Create Playlist</button>
+            </div>
+            <div class="s-main">
+                <p class="head-text">Let's find some podcasts to follow</p>
+                <p class="sub-text">We'll keep you updated on new episodes</p>
+                <button class="btn-w">Browse Podcasts</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="m-head">
+                <button class="btn-all btn">All</button>
+                <button class="btn-music btn btn-gr">Music</button>
+                <button class="btn-podcasts btn btn-gr">Podcasts</button>
+            </div>
+            <div class="music-album">
+                <div class="row row-1">
+                    <div class="r-item1">
+                        <div class="head-info">
+                            <h1>Getting started</h1>
+                            <div class="cards-icons">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <img src="./Assets/template.png" alt="template">
+                    </div>
+                    <div class="r-item2">
+                        <div class="head-info">
+                            <div class="contain-text">
+                                <p>Inspired by your recent activity</p>
+                                <a href="#" class="a-head">Recommended for Today</a>
+                            </div>
+                            <a href="#" class="a-subtext">Show all</a>
+                        </div>
+                        <div class="cards-collection">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026539071e0f1833190a491d4d" alt="tum hi aana">
+                                <div class="card-body">
+                                    <span class="card-heading">Tum hi aana &lpar;From "Marjaavaan"&rpar;</span>
+                                    <p class="card-text">Payal Dev, Jubin Nautiyal, Kunaal Verma</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d2be316742edcc853ea55141" alt="fanaa">
+                                <div class="card-body">
+                                    <span class="card-heading">Fanaa</span>
+                                    <p class="card-text">Jatin Lalit</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c1cd18ce264a99c525dd88f5" alt="humnava mere">
+                                <div class="card-body">
+                                    <span class="card-heading">Humnava Mere</span>
+                                    <p class="card-text">Jubin Nautiyal, Rocky Shiv, Manoj Muntashir</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273051fe40d22813af67a3391d7" alt="humari adhuri kahani">
+                                <div class="card-body">
+                                    <span class="card-heading">Humari Adhuri Kahani</span>
+                                    <p class="card-text">Jeet Ganguli, Mithoon, Ami Mishra</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27391a372450506a59732e145b9" alt="jalebi">
+                                <div class="card-body">
+                                    <span class="card-heading">Jalebi&lpar;Original Motion Picture Soundtrack&rpar;</span>
+                                    <p class="card-text">Javed Mohsin, Samuel Akanksha, Tanishq Bagchi</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rowN">
+                    <div class="head-info">
+                        <a href="#" class="a-head">Popular albums and singles</a>
+                        <a href="#" class="a-subtext">Show all</a>
+                    </div>
+                    <div class="rowN-cards-collection">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026539071e0f1833190a491d4d" alt="tum hi aana">
+                                <div class="card-body">
+                                    <span class="card-heading">Tum hi aana &lpar;From "Marjaavaan"&rpar;</span>
+                                    <p class="card-text">Payal Dev, Jubin Nautiyal, Kunaal Verma</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d2be316742edcc853ea55141" alt="fanaa">
+                                <div class="card-body">
+                                    <span class="card-heading">Fanaa</span>
+                                    <p class="card-text">Jatin Lalit</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c1cd18ce264a99c525dd88f5" alt="humnava mere">
+                                <div class="card-body">
+                                    <span class="card-heading">Humnava Mere</span>
+                                    <p class="card-text">Jubin Nautiyal, Rocky Shiv, Manoj Muntashir</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273051fe40d22813af67a3391d7" alt="humari adhuri kahani">
+                                <div class="card-body">
+                                    <span class="card-heading">Humari Adhuri Kahani</span>
+                                    <p class="card-text">Jeet Ganguli, Mithoon, Ami Mishra</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27391a372450506a59732e145b9" alt="jalebi">
+                                <div class="card-body">
+                                    <span class="card-heading">Jalebi&lpar;Original Motion Picture Soundtrack&rpar;</span>
+                                    <p class="card-text">Javed Mohsin, Samuel Akanksha, Tanishq Bagchi</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="row rowN">
+                    <div class="head-info">
+                        <a href="#" class="a-head">Popular albums and singles</a>
+                        <a href="#" class="a-subtext">Show all</a>
+                    </div>
+                    <div class="rowN-cards-collection">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026539071e0f1833190a491d4d" alt="tum hi aana">
+                                <div class="card-body">
+                                    <span class="card-heading">Tum hi aana &lpar;From "Marjaavaan"&rpar;</span>
+                                    <p class="card-text">Payal Dev, Jubin Nautiyal, Kunaal Verma</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d2be316742edcc853ea55141" alt="fanaa">
+                                <div class="card-body">
+                                    <span class="card-heading">Fanaa</span>
+                                    <p class="card-text">Jatin Lalit</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c1cd18ce264a99c525dd88f5" alt="humnava mere">
+                                <div class="card-body">
+                                    <span class="card-heading">Humnava Mere</span>
+                                    <p class="card-text">Jubin Nautiyal, Rocky Shiv, Manoj Muntashir</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273051fe40d22813af67a3391d7" alt="humari adhuri kahani">
+                                <div class="card-body">
+                                    <span class="card-heading">Humari Adhuri Kahani</span>
+                                    <p class="card-text">Jeet Ganguli, Mithoon, Ami Mishra</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27391a372450506a59732e145b9" alt="jalebi">
+                                <div class="card-body">
+                                    <span class="card-heading">Jalebi&lpar;Original Motion Picture Soundtrack&rpar;</span>
+                                    <p class="card-text">Javed Mohsin, Samuel Akanksha, Tanishq Bagchi</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c52900b39ef7ae005e6ec58d" alt="ek tha tiger">
+                                <div class="card-body">
+                                    <span class="card-heading">Ek Tha Tiger</span>
+                                    <p class="card-text">Sajid Wajid, Sohail Sen</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="row rowN">
+                    <div class="head-info">
+                        <a href="#" class="a-head">Shows to try</a>
+                        <a href="#" class="a-subtext">Show all</a>
+                    </div>
+                    <div class="rowN-cards-collection">
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026539071e0f1833190a491d4d" alt="tum hi aana">
+                                <div class="card-body">
+                                    <span class="card-heading">Tum hi aana &lpar;From "Marjaavaan"&rpar;</span>
+                                    <p class="card-text">Payal Dev, Jubin Nautiyal, Kunaal Verma</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d2be316742edcc853ea55141" alt="fanaa">
+                                <div class="card-body">
+                                    <span class="card-heading">Fanaa</span>
+                                    <p class="card-text">Jatin Lalit</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                            <div class="card">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c1cd18ce264a99c525dd88f5" alt="humnava mere">
+                                <div class="card-body">
+                                    <span class="card-heading">Humnava Mere</span>
+                                    <p class="card-text">Jubin Nautiyal, Rocky Shiv, Manoj Muntashir</p>
+                                </div>
+                                <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="row rowN"></div>
+            </div>
+            <div class="m-foot">
+                <div class="topline"></div>
+                <div class="top-links">
+                    <div class="contain-box">
+                        <div class="box">
+                            <h4>Company</h4>
+                            <p><a href="#">About</a></p>
+                            <p><a href="#">Jobs</a></p>
+                            <p><a href="#">For the Record</a></p>
+                        </div>
+                        <div class="box">
+                            <h4>Communities</h4>
+                            <p><a href="#">For Artists</a></p>
+                            <p><a href="#">Developers</a></p>
+                            <p><a href="#">Advertising</a></p>
+                            <p><a href="#">Investors</a></p>
+                            <p><a href="#">Vendors</a></p>
+                        </div>
+                        <div class="box">
+                            <h4>Useful Links</h4>
+                            <p><a href="#">Support</a></p>
+                            <p><a href="#">Free Mobile App</a></p>
+                            <p><a href="#">Popular by Country</a></p>
+                            <p><a href="#">Import Your Music</a></p>
+                        </div>
+                        <div class="box">
+                            <h4>Spotify Plans</h4>
+                            <p><a href="#">Premium Standard</a></p>
+                            <p><a href="#">Premium Platinum</a></p>
+                            <p><a href="#">Premium Student</a></p>
+                            <p><a href="#">Spotify Free</a></p>
+                        </div>
+                    </div>
+                    <div class="foot-icons">
+                        <span class="f-icons"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="f-icons"><i class="fa-brands fa-x-twitter"></i></span>
+                        <span class="f-icons"><i class="fa-brands fa-facebook"></i></span>
+                    </div>
+                </div>
+                <div class="topline"></div>
+            </div>
+            <div class="m-foot-end">
+                    <ul class="list">
+                        <li>Legal</li>
+                        <li>Safety & Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <span class="rights">&copy; 2026 Spotify AB</span>
+            </div>
+        </div>
+
+        <div class="side-div"><i class="fa-solid fa-chevron-left"></i></div>
+
+        <div class="music-player">
+            <div class="song-played">
+                <img src="https://i.scdn.co/image/ab67616d0000b273c1cd18ce264a99c525dd88f5" alt="song">
+                <div class="song-info">
+                    <p class="song-title">Humnava Mere</p>
+                    <p class="song-desc">Jubin Nautiyal, Rocky-Shiv, Manoj Muntashir, Rocky Khanna</p>
+                </div>
+                <i class="fa-solid fa-circle-plus music-icons"></i>
+            </div>
+            <div class="song-player">
+                <div class="contain-controls">
+                    <div class="player-controls">
+                        <i class="fa-solid fa-shuffle music-icons"></i>
+                        <i class="fa-solid fa-backward-step music-icons"></i>
+                        <div class="player-btn btn-w">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <i class="fa-solid fa-forward-step music-icons"></i>
+                        <i class="fa-solid fa-retweet music-icons"></i>
+                    </div>
+                </div>
+                <div class="playback-bar">
+                    <span class="time">0:02</span>
+                    <input type="range" min="0" max="1000" value="0">
+                    <span class="time">5:00</span>
+                </div>
+            </div>
+            <div class="side-controls">
+                <i class="fa-brands fa-itunes-note music-icons"></i>
+                <i class="fa-solid fa-bars-progress music-icons"></i>
+                <i class="fa-solid fa-computer music-icons"></i>
+                <div class="volume">
+                    <i class="fa-solid fa-volume-high music-icons"></i>
+                    <input type="range" min="0" max="1000" value="1000">
+                </div>
+                <i class="fa-brands fa-chromecast music-icons"></i>
+                <i class="fa-solid fa-expand music-icons"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
